@@ -19,6 +19,17 @@
     opacity: 0.75;
   }
 
+  .badge {
+    font-size: 12px;
+    font-weight: lighter;
+  }
+
+  .tags-list {
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+  }
+
   .card-remove-link {
     color: white;
     border-radius: 50%;

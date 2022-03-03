@@ -1,9 +1,11 @@
 <div class="mb-3 card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= plant.image_url %>')">
   <%= plant.name %>
 
-  <ul>
+  <ul class="tags-list mb-0 list-unstyled list-inline">
     <% plant.tags.each do |tag| %>
-      <li><%= tag.name %></li>
+      <li class="list-inline-item">
+        <div class="badge bg-light text-dark"><%= tag.name %></div>
+      </li>
     <% end %>
   </ul>
 
