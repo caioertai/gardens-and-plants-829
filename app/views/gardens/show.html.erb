@@ -8,12 +8,7 @@
   <div class="row">
     <% @garden.plants.each do |plant| %>
       <div class="col-4">
-        <div
-          class="mb-3 card-category"
-          style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= plant.image_url %>')">
-          <%= plant.name %>
-          <%= link_to '&times;'.html_safe, plant_path(plant), class: "card-remove-link", method: :delete %>
-        </div>
+        <%= render "plants/card", plant: plant %>
       </div>
     <% end %>
     <div class="col-4">
