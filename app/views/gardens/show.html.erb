@@ -17,11 +17,7 @@
       </div>
     <% end %>
     <div class="col-4">
-      <%= link_to new_garden_plant_path(@garden), class: "btn btn-white d-block" do %>
-        <div class="mb-3 card-category bg-info">
-          Add a plant
-        </div>
-      <% end %>
+      <%= link_to "Add a plant", new_garden_plant_path(@garden), class: "card-category bg-secondary" %>
     </div>
   </div>
 </div>

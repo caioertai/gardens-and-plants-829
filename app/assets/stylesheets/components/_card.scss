@@ -12,6 +12,12 @@
   border-radius: 5px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   position: relative;
+  text-decoration: none;
+
+  &:hover {
+    color: white;
+    opacity: 0.75;
+  }
 
   .card-remove-link {
     color: white;
