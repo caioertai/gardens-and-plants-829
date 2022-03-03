@@ -19,3 +19,21 @@ Plant.create!(
   garden: garden1,
   image_url: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.wLXNxLbFLBLQU1QMsUgR6AHaHa%26pid%3DApi&f=1"
 )
+
+Plant.create!(
+  name: "Monstera",
+  image_url: "https://raw.githubusercontent.com/lewagon/fullstack-images/master/rails/parks-and-plants/plants/monstera.jpg",
+  garden: garden1
+)
+
+Plant.create!(
+  name: "Philo",
+  image_url: "https://raw.githubusercontent.com/lewagon/fullstack-images/master/rails/parks-and-plants/plants/philo.jpg",
+  garden: garden1
+)
+
+Plant.create!(
+  name: "Dieff",
+  image_url: "https://raw.githubusercontent.com/lewagon/fullstack-images/master/rails/parks-and-plants/plants/dieffenbachia.jpg",
+  garden: garden1
+)
