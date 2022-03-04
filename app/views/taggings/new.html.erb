@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-12 col-lg-6 ">
+      <h1>Tagging <%= @plant.name %></h1>
+      <!-- plants/:p_id/taggings/ -->
+      <%= simple_form_for [@plant, @tagging] do |f| -%>
+        <%= f.association :tag, collection: Tag.where.not(id: @plant.tags) %>
+        <%= f.button :submit, class: "btn-primary" %>
+      <% end -%>
+    </div>
+  </div>
+</div>
+

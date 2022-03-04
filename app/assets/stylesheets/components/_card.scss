@@ -22,12 +22,14 @@
   .badge {
     font-size: 12px;
     font-weight: lighter;
+    margin-bottom: 4px;
   }
 
   .tags-list {
     position: absolute;
     bottom: 8px;
     left: 8px;
+    font-size: 0;
   }
 
   .card-remove-link {

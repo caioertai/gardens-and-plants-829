@@ -2,11 +2,22 @@
   <%= plant.name %>
 
   <ul class="tags-list mb-0 list-unstyled list-inline">
-    <% plant.tags.each do |tag| %>
+    <% plant.tags.first(3).each do |tag| %>
       <li class="list-inline-item">
         <div class="badge bg-light text-dark"><%= tag.name %></div>
       </li>
     <% end %>
+
+    <% if plant.tags.size > 3 %>
+      <li class="list-inline-item">
+        <div class="badge bg-light text-dark">...</div>
+      </li>
+    <% end %>
+
+    <li class="list-inline-item">
+      <!--  GET /plants/:plant_id/taggings/new  -->
+      <%= link_to "+", new_plant_tagging_path(plant), class: "badge bg-primary" %>
+    </li>
   </ul>
 
   <%= link_to '&times;'.html_safe, plant_path(plant), class: "card-remove-link", method: :delete %>
